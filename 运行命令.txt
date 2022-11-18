@@ -1,0 +1,13 @@
+关键点yolov7-pose网址：
+https://github.com/WongKinYiu/yolov7/tree/pose
+
+测试显卡：NVIDIA TITAN Xp
+
+1、纯关键点检测（权重与视频路径已写入代码） 76ms
+python detect.py --source testnew.mp4 --kpt-label  --view-img  
+
+2、关键点检测+bytetrack跟踪（权重与视频路径已写入代码）76-77ms
+python detect_track.py --kpt-label  --view-img
+
+3、关键点检测+bytetrack跟踪+stgcn行为预测（权重与视频路径已写入代码）77-78ms
+python detect_track_stgcn.py --kpt-label  --view-img
