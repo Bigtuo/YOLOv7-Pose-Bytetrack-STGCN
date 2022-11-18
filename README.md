@@ -16,7 +16,7 @@ Key point detection+Bytetrack+STGCN, run the command below:
 ```
 python detect_track_stgcn.py --weights "yolov7-w6-pose.pt" --kpt-label  --view-img
 ```
-
+YOLO-Pose: [https://github.com/Bigtuo/YOLO-POSE-Bytetrack-STGCN]
 
 # yolov7-pose
 Implementation of "YOLOv7: Trainable bag-of-freebies sets new state-of-the-art for real-time object detectors"
