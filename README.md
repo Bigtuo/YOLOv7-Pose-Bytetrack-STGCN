@@ -1,3 +1,23 @@
+# YOLOv7-Pose-Bytetrack-STGCN
+
+YOLOv7-POSE was used for key point detection, Bytetrack for tracking, and STGCN for fall and other behavior recognition.
+
+ <img width="200" height="300" src="./utils/figures/kpt.png"> |    <img width="200" height="300"  src="./utils/figures/kpt+track.png"> |     <img width="200" height="300" src="./utils/figures/kpt+track+stgcn.png">
+ 
+ Key point detection, run the command below:
+```
+python detect.py --weights "yolov5m_pose_960_lite.pt" --kpt-label  --view-img
+```
+Key point detection+Bytetrack, run the command below:
+```
+python detect_track.py --weights "yolov5m_pose_960_lite.pt" --kpt-label  --view-img
+```
+Key point detection+Bytetrack+STGCN, run the command below:
+```
+python detect_track_stgcn.py --weights "yolov5m_pose_960_lite.pt" --kpt-label  --view-img
+```
+
+
 # yolov7-pose
 Implementation of "YOLOv7: Trainable bag-of-freebies sets new state-of-the-art for real-time object detectors"
 
