@@ -6,15 +6,15 @@ YOLOv7-POSE was used for key point detection, Bytetrack for tracking, and STGCN 
  
  Key point detection, run the command below:
 ```
-python detect.py --weights "yolov5m_pose_960_lite.pt" --kpt-label  --view-img
+python detect.py --weights "yolov7-w6-pose.pt" --kpt-label  --view-img
 ```
 Key point detection+Bytetrack, run the command below:
 ```
-python detect_track.py --weights "yolov5m_pose_960_lite.pt" --kpt-label  --view-img
+python detect_track.py --weights "yolov7-w6-pose.pt" --kpt-label  --view-img
 ```
 Key point detection+Bytetrack+STGCN, run the command below:
 ```
-python detect_track_stgcn.py --weights "yolov5m_pose_960_lite.pt" --kpt-label  --view-img
+python detect_track_stgcn.py --weights "yolov7-w6-pose.pt" --kpt-label  --view-img
 ```
 
 
